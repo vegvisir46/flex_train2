@@ -1,0 +1,122 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    /*font-size: 14px;*/
+    color: #252B42;
+}
+
+/* ________________________________________________________________________________________________________________ */
+
+body {
+    font-family: Arial, "Helvetica Neue, sans-serif";
+}
+
+.wrapper {
+    min-height: 100%; /* оболочка на всю высоту экрана */
+    overflow: hidden; /* чтобы не вылезло за экран */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto; /* прижим футера к низу страницу, grow=1, shrink=1, basis-auto */
+}
+
+.hi {
+    background-color: #445162;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0px auto;
+}
+
+.hi__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hi__body {
+    color: #fff;
+    padding: 0 30px 0 0;
+}
+
+.hi__title {
+    color: #be500f;
+    text-shadow: 5px 5px 0 rgba(192, 163, 163, 0.3);
+    font-size: 60px;
+    margin-bottom: 38px;
+}
+
+.hi__list {
+}
+
+.hi__list li {
+    background: url("../FLEX2/img/ring.png") 0 1px no-repeat;
+    text-shadow: 5px 5px 0 rgba(5, 5, 5, 0.3);
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0 0 0 36px;
+    margin: 0 0 15px 0;
+}
+
+.hi__list li:last-child {
+    margin: 0;
+}
+
+.hi__image {
+
+}
+
+.hi__image img {
+    width: 600px;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
+.footer__row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #445162;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
